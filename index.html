@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--swiper css-->
+    <link rel="stylesheet" type="text/css" href="swiper.css" />
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                Shivam
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="fa-solid fa-trophy"></i>
+                            Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <i class="fa-solid fa-book-open"></i>
+                            Qualifications
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="fa-solid fa-briefcase"></i>
+                            Services
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class="fa-solid fa-image"></i>
+                            Projects
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="fa-solid fa-message"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Close Button  -->
+                <div class="nav__close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons">
+                <!-- Theme Change Button  -->
+                <i class="fa-solid fa-moon change-theme" id="theme-button"></i>
+
+                <!-- Toggle button  -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__container container grid section__border">
+                <div class="home__data grid">
+                    <h1 class="home__title">
+                        Hi, I am Shivam <br />
+                        Frontend Developer <br />
+                        From India. <br />
+                    </h1>
+
+                    <div class="home__blob grid">
+                        <div class="home__perfil">
+                            <img src="perfil.jpg" alt="home perfil" />
+                        </div>
+
+
+                    </div>
+
+                    <ul class="home__social">
+                        <a href="https://www.linkedin.com/" target="_blank" class="home__social-link">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://fa-github.com/" target="_blank" class="home__social-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </ul>
+                </div>
+
+                <!-- Home info 1 -->
+                <div class="home__info">
+                    <div>
+                        <h3 class="home__info-title">
+                            BIOGRAPHY
+                        </h3>
+                        <p class="home__info-description">
+                            Hi, I am Shivam, Frontend Developer.
+                            I am extremely passionate about designing creative
+                            Web intefaces.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="home__info-title">
+                            CONTACT
+                        </h3>
+                        <p class="home__info-description">
+                            Mumbai, India <br>
+                            thanvishivam99@gmail.com <br />
+                            +91 7339870861 <br />
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="home__info-title">
+                            SERVICES
+                        </h3>
+                        <p class="home__info-description">
+                            Website Design
+                            UI/UX Design
+                            Animation
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Home info 2 -->
+                <div class="home__info">
+                    <div>
+                        <h3 class="home__info-title">
+                            YEARS OF EXPERIENCE
+                        </h3>
+                        <p class="home__info-number">
+                            1+
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="home__info-title">
+                            COMPLETED PROJECTS
+                        </h3>
+                        <p class="home__info-number">
+                            5+
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="home__info-title">
+                            COMPANIES WORKED WITH
+                        </h3>
+                        <p class="home__info-number">
+                            1+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--------------------Skills--------------------------->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">SKILLS</h2>
+            <span class="section__subtitle">My Favorite Skills</span>
+
+            <div class="skills__container container grid section__border">
+                <!--------------------Skills 1 --------------------------->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="fa-solid fa-pen-nib"></i>
+                        Frontend Development
+                    </h3>
+
+                    <div class="skills__info">
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <div class="card4">
+                                    <div class="rating4">
+                                      <h2>
+                                        <span class="skills__name">
+                                          HTML5
+                                        </span>
+                                        <br/>
+                                        <span id="HTMLPercent" class="counter skills__subtitle" data-target="75"> 
+                                          75
+                                        </span>
+                                        <sup>
+                                           %
+                                        </sup>
+                                      </h2>
+                                      <div class="block4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <div class="card5">
+                                    <div class="rating5">
+                                      <h2>
+                                        <span class="skills__name">
+                                          CSS3
+                                        </span>
+                                        <br/>
+                                        <span id="CSSPercent" class="counter skills__subtitle" data-target="75"> 
+                                          75
+                                        </span>
+                                        <sup>
+                                           %
+                                        </sup>
+                                      </h2>
+                                      <div class="block5"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <div class="card6">
+                                    <div class="rating6">
+                                      <h2>
+                                        <span class="skills__name">
+                                          BootStrap
+                                        </span>
+                                        <br/>
+                                        <span id="BPercent" class="counter skills__subtitle" data-target="80"> 
+                                          80
+                                        </span>
+                                        <sup>
+                                           %
+                                        </sup>
+                                      </h2>
+                                      <div class="block6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <div class="card7">
+                                    <div class="rating7">
+                                      <h2>
+                                        <span class="skills__name">
+                                          ReactJS
+                                        </span>
+                                        <br/>
+                                        <span id="RPercent" class="counter skills__subtitle" data-target="60"> 
+                                          60
+                                        </span>
+                                        <sup>
+                                           %
+                                        </sup>
+                                      </h2>
+                                      <div class="block7"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <div class="card8">
+                                    <div class="rating8">
+                                      <h2>
+                                        <span class="skills__name">
+                                          JavaScript
+                                        </span>
+                                        <br/>
+                                        <span id="JSPercent" class="counter skills__subtitle" data-target="75"> 
+                                          75
+                                        </span>
+                                        <sup>
+                                           %
+                                        </sup>
+                                      </h2>
+                                      <div class="block8"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------------------Skills 2 --------------------------->
+
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="fa-solid fa-code"></i>
+                        Coding
+                    </h3>
+
+                    <div class="skills__info">
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <div class="card">
+                                    <div class="rating" id="rating1">
+                                      <h2>
+                                        <span class="skills__name">
+                                          Java
+                                        </span>
+                                        <br/>
+                                        <span id="JPercent" class="counter skills__subtitle" data-target="90"> 
+                                          90
+                                        </span>
+                                        <sup>
+                                            %
+                                          </sup>
+                                      </h2>
+                                      <div class="block" id="block1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <div class="card2">
+                                    <div class="rating2">
+                                      <h2>
+                                        <span class="skills__name">
+                                          C++
+                                        </span>
+                                        <br/>
+                                        <span id="CPercent" class="counter skills__subtitle" data-target="60"> 
+                                          60
+                                        </span>
+                                        <sup>
+                                           %
+                                        </sup>
+                                      </h2>
+                                      <div class="block2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <div class="card3">
+                                    <div class="rating3">
+                                      <h2>
+                                        <span class="skills__name">
+                                          SQL
+                                        </span>
+                                        <br/>
+                                        <span id="SPercent" class="counter skills__subtitle" data-target="40"> 
+                                          40
+                                        </span>
+                                        <sup>
+                                           %
+                                        </sup>
+                                      </h2>
+                                      <div class="block3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============================Qualification=========================-->
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title">
+                Qualification
+            </h2>
+            <span class="section__subtitle">
+                Experience & Education
+            </span>
+
+            <div class="qualification__container container grid section__border">
+                <!--===================qualification 1==========================-->
+                <div class="qualification__content">
+                    <h3 class="qualification__title">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        Education
+                    </h3>
+
+                    <div class="qualification__info">
+                        <div>
+                            <h3 class="qualification__name">
+                                Full Stack Developer
+                            </h3>
+                            <span class="qualification__country">Mumbai - India</span>
+                            <span class="qualification__year">2022-2023</span>
+                        </div>
+                    </div>
+                    <div class="qualification__info">
+                        <div>
+                            <h3 class="qualification__name">
+                                Web Development
+                            </h3>
+                            <span class="qualification__country">India</span>
+                            <span class="qualification__year">2022-2023</span>
+                        </div>
+                    </div>
+                    <div class="qualification__info">
+                        <div>
+                            <h3 class="qualification__name">
+                                Mechanical Engineer
+                            </h3>
+                            <span class="qualification__country">NMIMS</span>
+                            <span class="qualification__year">2018-2022</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--===================qualification 2==========================-->
+                <div class="qualification__content">
+                    <h3 class="qualification__title">
+                        <i class="fa-regular fa-building"></i>Work
+                    </h3>
+
+                    <div class="qualification__info">
+                        <div>
+                            <h3 class="qualification__name">
+                                Frontend Developer
+                            </h3>
+                            <span class="qualification__country">Brahminji - India</span>
+                            <span class="qualification__year">2023, 5 months</span>
+                        </div>
+                        <div>
+                            <h3 class="qualification__name">
+                                Software Engineer
+                            </h3>
+                            <span class="qualification__country">Skillup IT Academy</span>
+                            <span class="qualification__year">2023, 3 months</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <img src="" alt="" class="qualification__img"> -->
+        </section>
+
+        <!--============================SERVICES================================-->
+        <section class="services section" id="services">
+            <h2 class="section__title">
+                Services
+            </h2>
+            <span class="section__subtitle">
+                What I Offer
+            </span>
+
+            <div class="services__container container grid section__border">
+                <div class="services__card">
+                    <i class="fa-brands fa-buffer"></i>
+
+                    <h2 class="services__title">
+                        Web <br />
+                        Developer <br />
+                    </h2>
+
+                    <p class="services__description">
+                        Service that provides the best quality and at the request of the client,
+                        with professional work and customer support.
+                    </p>
+
+                    <div class="services__border"></div>
+                </div>
+
+
+                <div class="services__card">
+                    <i class="fa-solid fa-laptop-code"></i>
+
+                    <h2 class="services__title">
+                        Web <br />
+                        Design <br />
+                    </h2>
+
+                    <p class="services__description">
+                        Service that provides the best quality and at the request of the client,
+                        with professional work and customer support.
+                    </p>
+
+                    <div class="services__border"></div>
+                </div>
+
+
+                <div class="services__card">
+                    <i class="fa-solid fa-feather-pointed"></i>
+
+                    <h2 class="services__title">
+                        Web <br />
+                        Coding
+                    </h2>
+
+                    <p class="services__description">
+                        Service that provides the best quality and at the request of the client,
+                        with professional work and customer support.
+                    </p>
+
+                    <div class="services__border"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--============================PROJECTS==============================-->
+        <section class="projects section" id="projects">
+            <h2 class="section__title">Projects</h2>
+            <span class="section__subtitle">Most Recent Work</span>
+
+            <div class="container section__border">
+                <div class="projects__container swiper">
+                    <div class="swiper-wrapper">
+                        <!--=======================PROJECT 1====================-->
+                        <div class="projects__content swiper-slide">
+                            <img src="puja-main.jpg" alt="Project image">
+
+                            <div>
+                                <span class="projects__subtitle">Web</span>
+                                <h1 class="projects__title">Website Front-Page</h1>
+
+                                <a href="#" class="projects__button">
+                                    View Demo
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--=======================PROJECT 2====================-->
+                        <div class="projects__content swiper-slide">
+                            <img src="puja-main.jpg" alt="Project image">
+
+                            <div>
+                                <span class="projects__subtitle">Web using ReactJS</span>
+                                <h1 class="projects__title">Body-Fat Calculator</h1>
+
+                                <a href="#" class="projects__button">
+                                    View Demo
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--=======================PROJECT 3====================-->
+                        <div class="projects__content swiper-slide">
+                            <img src="puja-main.jpg" alt="Project image">
+
+                            <div>
+                                <span class="projects__subtitle">Web</span>
+                                <h1 class="projects__title">Panchang Chart for a day.</h1>
+
+                                <a href="#" class="projects__button">
+                                    View Demo
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--=======================PROJECT 3====================-->
+                        <div class="projects__content swiper-slide">
+                            <img src="puja-main.jpg" alt="Project image">
+
+                            <div>
+                                <span class="projects__subtitle">Web using ReactJS</span>
+                                <h1 class="projects__title">Diet Plan Maker</h1>
+
+                                <a href="#" class="projects__button">
+                                    View Demo
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--swiper arrows-->
+                    <div class="swiper-button-prev">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+
+                    <!--swiper pagination-->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="testimonial section">
+            <h2 class="section__title">Testimonial</h2>
+            <span class="section__subtitle"></span>
+        </section> --> 
+
+        <!-- ======================================CONTACT================================= -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid section__border">
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="fa-regular fa-comment-dots"></i>
+                        Talk to me 
+                    </h3>
+
+                    <div class="contact__info">
+                        <div class="contact__data">
+                            <span class="contact__data-title">Email</span>
+                            <span class="contact__data-info">thanvishivam99@gmail.com</span>
+                        </div>
+
+                        <div class="contact__data">
+                            <span class="contact__data-title">Whatsapp</span>
+                            <span class="contact__data-info">+91 7339870861</span>
+                            <a href="https://api.whatsapp.com/send?phone=917339870861&text=Hello, more information!" target="_blank" class="contact__button">
+                                Write Me <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="contact__data">
+                            <span class="contact__data-title">Instagram</span>
+                            <span class="contact__data-info">Shivam Thanvi</span>
+                            <a href="https://instagram.com/shivamthanvi?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="contact__button">
+                                Write Me <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Write Me your Project
+                    </h3>
+
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Name</label>
+                            <input type="text" name="user_name" required placeholder="Write Your Name" class="contact__form-input" id="contact-name">
+                        </div>
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Mail</label>
+                            <input type="email" name="user_email" required placeholder="Write Your Email" class="contact__form-input" id="contact-email">
+                        </div>
+                        <div class="contact__form-div contact__form-area">
+                            <label class="contact__form-tag">Project</label>
+                            <textarea name="user-project" placeholder="Write Your Project" id="contact-project" class="contact__form-input"></textarea>
+                        </div>
+
+                        <p class="contact__message" id="contact-message"></p>
+
+                        <button type="submit" class="contact__button">
+                            Submit <i class="fa-regular fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--============================================FOOTER==================================================-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Shivam</h1>
+            <p>Full Stack Developer</p>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#home" class="footer__link">Home</a>
+                </li>
+                <li>
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects" class="footer__link">Projects</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <a href="https://www.linkedin.com/" target="_blank" class="footer__social-link">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/" target="_blank" class="footer__social-link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="www.//instagram.com/" target="_blank" class="footer__social-link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </ul>
+
+            
+        </div>
+    </footer>
+    <!--Scroll Up-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!--Scrolling animation-->
+    <script src="scroll.js"></script>
+    <!--Swiper-->
+    <script src="swiper.js"></script>
+    <!--Email-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!--Main-->
+    <script src="script.js"></script>
+</body>
+
+</html>
